@@ -1,0 +1,201 @@
+/* Name: Ishman Virk, 
+ID: 
+ */
+/* ------------------------ */
+
+html {
+    font: small-caps bold 20px/1.5 "Times New Roman", serif;
+    background-color: #f0f0f0;
+}
+
+/* Body: set max-width, center with margin auto, add padding and border, and background-color */
+body {
+    max-width: 900px;
+    margin: auto;
+    padding: 0.2rem;
+    border: 0.2rem solid #ccc;
+    background-color: #f0f0f0;
+}
+
+/* reset default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main layout: two columns side by side */
+main {
+  overflow: hidden; /* establish block formatting context as clearfix */
+}
+
+/* left panel: 70% width, float left, padding */
+.left-panel {
+  float: left;
+  width: 70%;              
+  padding: 1rem;           
+  background-color: #f0f0f0;
+}
+
+/* right panel: 30% width, float right, padding */
+.right-panel {
+  float: right;
+  width: 30%;              
+  padding: 1rem;           
+  background-color: #f0f0f0;
+}
+
+
+/* Full‐width header */
+header {
+    background: linear-gradient(to right, #eff2f5, #1435f3);
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}
+
+/* Full‐width header */
+footer {
+    background: linear-gradient(to right, #e2e3ec, #2140f0);
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 1rem 0;
+}
+
+/* Blockquote styling */
+blockquote {
+    background-color: #f9f9f9;
+    padding: 0.5rem;   
+    border-left: 0.5rem solid #ccc;
+    width: 90%;
+    margin: 1rem auto;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Section quote styling */
+section {
+    border: 0.1rem  #666;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 2rem auto;
+    font-family: "Courier New", monospace;
+    font-style: oblique;
+    color: #444444;
+    padding: 0.3rem;
+}
+/* Section headings */
+h2, h3 {
+    color: #333333;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+/* Figure and image styling */ 
+figure {
+    border: 0.1rem solid #888;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+figure img {
+    display: block;
+    margin: 0 auto;
+    border: 0.25rem solid #555;
+    border-radius: 1rem;
+    width: 80%;
+}
+figcaption {
+    font-size: 0.85rem;
+    font-variant: small-caps;
+}
+/* iFrame styling */
+iframe {
+    display: block;
+    margin: 0.01rem auto;
+    border: 0.01rem solid #333;
+    width: 80%;
+}
+
+/* List and link styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a:link, a:visited {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #004999;
+    text-decoration: underline;
+}
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+th {
+    text-align: left;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: #ffffff;
+    background-color: #4a90e2;
+    padding: 0.5rem;
+}
+td {
+    padding: 0.5rem;
+    border: 0.1rem solid #ccc;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #e0e0e0;
+}
+/* Form styling */
+.form-label {
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0.2rem;
+    display: inline-block;
+}
+.form-control {
+    padding: 0.5rem;
+    border: 0.1rem solid #333333;
+    border-radius: 0.5rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    html {
+        font-size: 90%;
+    }
+    .left-panel, .right-panel {
+        float: none;
+        width: 100%;
+    }
+    body {
+        margin: 0.5rem;
+        border: none;
+    }
+    blockquote, section {
+        width: 98%;
+    }
+    figure img, iframe {
+        width: 100%;
+    }
+    table, .form-control {
+        width: 100%;
+    }
+}
